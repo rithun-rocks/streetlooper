@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial scale=1.0">
+		<title>Streetlooper</title>
+		<link rel="stylesheet" href="web.css">
+	</head>
+	<body>
+		<!--header-->
+		<header>
+			<a href="web.html"><img src="logo.png" alt="Streetlooper"></a>
+			<ul>
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#shops">SHOPS</a></li>
+				<li><a href="#review">REVIEW</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+			<div class='toggle' onclick="toggle()"></div>
+		</header>
+		<!--body-->
+		<section class='sec'>
+			<div class='content'>
+				<div class='text'>
+					<h1>All-in-one</h1>
+					<h2>Street Looper</h2>
+					<h3>Cloud-Based, Online Sales Practice Management Software</h3>
+					<p>With state-of-the-art features and an award-winning, cloud-based platform, discover why Saleslooper time and again proves to be an industry leader and the favorite practice management software for sales</p>
+					<button class='download'>DOWNLOAD APP</button>
+				</div>
+				<div class='imgbox'>
+					<img src="img.png">
+				</div>
+			</div>
+		</section>
+		<!--script-->
+		<script type="text/javascript">
+			window.addEventListener("scroll", function(){
+				var header = document.querySelector("header");
+				header.classList.toggle("sticky", window.scrollY > 0);
+			})
+			function toggle(){
+				var header = document.querySelector("header");
+				header.classList.toggle("active");
+			}
+		</script >
+	</body>
+</html>
