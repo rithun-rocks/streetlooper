@@ -1,0 +1,148 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial scale=1.0">
+		<title>Sales Looper</title>
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="description" content="Streetlooper's innovative sales software is designed to perform all the major functions of a marketing practice. Founded with the principles of buisness"
+	</head>
+	<body>
+		<!--navigation bar-->
+		<header>
+			<a href="web.html"><img src="img\logo.png" alt="Streetlooper"></a>
+			<ul>
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#shops">SHOPS</a></li>
+				<li><a href="#review">REVIEW</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+			<!--js code for sticky navigation bar-->
+			<div class='toggle' onclick="toggle()"></div>
+		</header>
+
+
+
+
+
+		<!--blue area 1-->
+		<section class='blue1'>
+			<div class='textbox'>
+				<h1>All-in-one</h1>
+				<h2>Sales Looper</h2>
+				<h3>Cloud-Based, Online Sales Practice Management Software</h3>
+				<p>With state-of-the-art features and an award-winning, cloud-based platform, discover why Saleslooper time and again proves to be an industry leader and the favorite practice management software for sales</p>
+				<button class='download'>DOWNLOAD APP</button>
+			</div>
+			<div class='imgbox'>
+				<img src="img\img.png">
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!--white area 1-->
+		<section class='white1'>
+			<div class="list">
+				<div>
+					<h2>82%</h2>
+					<p>Improvement in collection efficiency</p>
+				</div>
+				<div>
+					<h2>47%</h2>
+					<p>Reduction in missed sotres</p>
+				</div>
+				<div>
+					<h2>60%</h2>
+					<p>Increase in customers</p>
+				</div>
+				<div>
+					<h2>#1</h2>
+					<p>Obvious choice for sales software</p>
+				</div>
+			</div>
+
+
+			<div class='space'></div>
+			<div class='textbox'>
+				<h1>Proven & Trusted Sales Software</h1>
+				<p>Street Looper's users include a diverse variety of sales marketers from all across the country. But whether large or small, they all have one thing in common: They trust our cloud sales software to provide efficient practice management, world-class support, and modern tools and technology.</p>
+				<marquee direction="left">
+					<div>
+						<img src="img\marquee\sticcerlogo.png" alt="Baketastic">
+						<img src="img\marquee\piece.png" alt="The Piece">
+						<img src="img\marquee\logo.png" alt="Victory">
+						<img src="img\marquee\sticcerlogo.png" alt="Baketastic">
+						<img src="img\marquee\piece.png" alt="The Piece">
+						<img src="img\marquee\logo.png" alt="Victory">
+						<img src="img\marquee\sticcerlogo.png" alt="Baketastic">
+						<img src="img\marquee\piece.png" alt="The Piece">
+						<img src="img\marquee\logo.png" alt="Victory">
+					</div>
+				</marquee>
+			</div>
+
+
+
+			<div class='textbox'>
+				<h1>Who we serve</h1>
+				<p>Saleslooper is used by large DSOs, single-office practices, and everything in between! With all the features and functionality you could ask for, we help streamline your operations with an affordable and scalable solution. Contact us today to discuss your practice needs, and we’re confident you’ll see the Saleslooper difference!</p>
+				<div class='buttons'>
+					<button>
+						<img src="img\logo.png">
+						<h2>Sales Practices</h2>
+						<p>Effortlessly manage everything you need</p>
+					</button>
+					<button>
+						<img src="img\logo.png">
+						<h2>Sales Practices</h2>
+						<p>Effortlessly manage everything you need</p>
+					</button>
+					<button>
+						<img src="img\logo.png">
+						<h2>Sales Practices</h2>
+						<p>Effortlessly manage everything you need</p>
+					</button>
+					<button>
+						<img src="img\logo.png">
+						<h2>Sales Practices</h2>
+						<p>Effortlessly manage everything you need</p>
+					</button>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!--script-->
+		<script type="text/javascript">
+			window.addEventListener("scroll", function(){
+				var header = document.querySelector("header");
+				header.classList.toggle("sticky", window.scrollY > 0);
+			})
+			function toggle(){
+				var header = document.querySelector("header");
+				header.classList.toggle("active");
+			}
+		</script >
+	</body>
+</html>
