@@ -402,6 +402,8 @@ header.sticky{
   margin-bottom: -45vw;
   }
 }
+
+/*4 button grid*/
 .white1 .buttons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
@@ -412,13 +414,16 @@ header.sticky{
   height: 80%;
   max-height: 500px;
 }
-
+/*grid resolution adjustments*/
 @media (max-width: 900px) {
   .white1 .buttons {
+    margin-left: 10px;
+    margin-right: 10px;
     grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+    grid-gap: 10px;
   }
 }
-
+/*button formatting*/
 .white1 .buttons button {
   border: 0px solid #fff;
   background: #6eccf5;
@@ -427,12 +432,13 @@ header.sticky{
   margin: 0;
   text-align: center;
 }
-
+/*button hover effect*/
 .white1 .buttons button:hover{
   transform: translate(5px,5px);
   box-shadow: -10px 10px 0px #959595; 
   transition: 0.4s;
 }
+/*button content formatting*/
 .white1 .buttons button img{
   width: 100px;
   height: auto;
@@ -443,4 +449,28 @@ header.sticky{
 }
 .white1 .buttons button p{
   font-size: 20px;
+}
+
+
+/*footer formatting*/
+footer{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-top: 3px solid #6eccf5;
+  background-color: #00125c;
+  display: flex;
+  justify-content: space-between;
+}
+footer img{
+  height: 30px;
+  width: auto;
+}
+
+footer .medialinks a img{
+  width: 30px;
+  height: auto;
+  background-color: #6eccf5;
+  border-radius: 20px;
 }
