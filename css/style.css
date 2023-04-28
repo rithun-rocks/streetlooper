@@ -420,7 +420,7 @@ header.sticky{
     margin-left: 10px;
     margin-right: 10px;
     grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
-    grid-gap: 10px;
+    grid-gap: 20px;
   }
 }
 /*button formatting*/
@@ -473,4 +473,11 @@ footer .medialinks a img{
   height: auto;
   background-color: #6eccf5;
   border-radius: 20px;
+}
+
+@media (max-width: 900px){
+  footer{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
