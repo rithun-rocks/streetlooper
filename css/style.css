@@ -18,7 +18,7 @@ header{
   padding: 30px 100px;
   z-index: 1000;
   transition: 0.6s;
-  background-color: #00125c;
+  background-color: #05406b;
   background-size: cover;
 }
 
@@ -48,13 +48,13 @@ header ul li a{
   position: relative;
   text-decoration: none;
   color: #fff;
-  border-bottom: 1px solid #00125c;
+  border-bottom: 1px solid #05406b;
 }
 
 /*navigation list text hover effect*/
 header ul li a:hover{
-  border-bottom: 1px solid #ade6ff;
-  color: #ade6ff;
+  border-bottom: 1px solid #93d5dc;
+  color: #93d5dc;
   transition: 0.4s;
 }
 
@@ -62,7 +62,7 @@ header ul li a:hover{
 header.sticky{
   padding-top: 30px;
   padding-bottom: 30px;
-  background: #00125c;
+  background: #05406b;
   border-bottom: lpx solid 0,0,0,.1;
 }
 .toogle{
@@ -102,7 +102,7 @@ header.sticky{
 
   header{
     padding: 10px 30px;
-    background: #000726;
+    background: #05406b;
     border-bottom: lpx solid 
     0,0,0,.1;
   }
@@ -115,7 +115,7 @@ header.sticky{
     text-align: center;
     overflow: auto;
     visibility: hidden;
-    background: #000726;
+    background: #05406b;
   }
   header.active ul{
     visibility: visible;
@@ -148,7 +148,7 @@ header.sticky{
 .blue1{
   padding-left: 100px;
   padding-top: 150px;
-  background-color: #00125c;
+  background-color: #05406b;
   overflow: hidden;
   padding-bottom: 7vw;
   margin-bottom: -7vw;
@@ -168,7 +168,7 @@ header.sticky{
 }
 .blue1 .textbox h2{
   font-size: 6vw;
-  color: #9ce1ff;
+  color: #93d5dc;
 }
 .blue1 .textbox h3{
   font-size: 3.2vw;
@@ -198,7 +198,7 @@ header.sticky{
   padding: 22px 34px;
   margin-top: 30px;
   font-size: 16px;
-  background: #00125c;
+  background: #05406b;
   border-radius: 5px;
 }
 .download:hover{
@@ -237,7 +237,7 @@ header.sticky{
   }
   .blue1 .textbox h2{
     font-size: 9vw;
-    color: #9ce1ff;
+    color: #05406b;
   }
   .blue1 .textbox h3{
     font-size: 4vw;
@@ -287,14 +287,14 @@ header.sticky{
   margin-right: 30px;
 
   text-align: center;
-  background: #c8ebfa;
+  background: #e2f6f8;
   border-radius: 7px;
 }
 .white1 .list div{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   width: auto;
-  border-right: 1px solid #6eccf5;
+  border-right: 1px solid #38424d;
   padding: 1px;
 }
 .white1 .list div:last-child{
@@ -303,13 +303,13 @@ header.sticky{
 
 /*white 1 list text formatting*/
 .white1 .list h2{
-  font-size: 44px;
-  color: #63b7db;
+  font-size: 36px;
+  color: #2495a1;
 }
 .white1 .list p{
   max-width: 100%;
   padding-left: 4.1vw;
-  font-size: 20px;
+  font-size: 16px;
   color: #777777;
   transform: translateX(-2.05vw);
 }
@@ -367,41 +367,37 @@ header.sticky{
     padding-top: 10px;
     border-radius: 10px;
   }
-  .list div:last-child{
+  .white1 .list div:last-child{
     border-bottom: none;
   }
-  .list div:nth-child(3){
+  .white1 .list div:nth-child(3){
     border-bottom: none;
-  }
-  .list p{
-    padding-left: 8vw;
   }
   .blue1{
-  padding-bottom: 16vw;
-  margin-bottom: -16vw;
+  padding-bottom: 350px;
+  margin-bottom: -350px;
   }
 }
 @media(max-width: 660px){
-  .list div{
+  .white1 .list div{
+    margin-bottom: 0px;
+    margin-top: 40px;
+    padding-bottom: 40px;
     border-right: none;
-    border-bottom: 1px solid #6eccf5;
-    padding-top: 10px;
+    border-bottom: 1px solid #93d5dc;
   }
-  .list div:last-child{
+  .white1 .list div:last-child{
     border-bottom: none;
   }
-  .list div:nth-child(3){
-    border-bottom: 1px solid #6eccf5;
-  }
-  .list p{
-    padding-left: 16vw;
-    padding-bottom: 20px;
+  .white1 .list div:nth-child(3){
+    border-bottom: 1px solid #93d5dc;
   }
   .blue1{
-  padding-bottom: 45vw;
-  margin-bottom: -45vw;
+  padding-bottom: 600px;
+  margin-bottom: -600px;
   }
 }
+
 
 /*4 button grid*/
 .white1 .buttons {
@@ -426,16 +422,17 @@ header.sticky{
 /*button formatting*/
 .white1 .buttons button {
   border: 0px solid #fff;
-  background: #6eccf5;
+  background: #e2f6f8;
   width: 100%;
   max-width: 1000px;
   margin: 0;
   text-align: center;
+  border-radius: 5px;
 }
 /*button hover effect*/
 .white1 .buttons button:hover{
   transform: translate(5px,5px);
-  box-shadow: -10px 10px 0px #959595; 
+  box-shadow: -10px 10px 0px #cccccc; 
   transition: 0.4s;
 }
 /*button content formatting*/
@@ -451,15 +448,67 @@ header.sticky{
   font-size: 20px;
 }
 
+.comment {
+  margin-top: 10%;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  position: relative;
+}
+
+.review_img {
+  position: absolute;
+  bottom: 50%;
+  left: 2.5%;
+  width: 20%;
+  height: auto;
+}
+
+.review {
+  position: absolute;
+  bottom: 3%;
+  left: 12%;
+  color: #38424d;
+  padding: 0 5%;
+  max-width: 85%;
+}
+
+.review h4 {
+  font-size: 1.7vw;
+}
+
+.review p {
+  font-size: 1.3vw;
+  padding-top: 4%;
+}
+
+.review h5 {
+  font-size: 1.4vw;
+  padding-top: 3%;
+}
+
+.review h6 {
+  font-size: 1.2vw;
+  padding-top: 0.5%;
+  padding-bottom: 2%;
+}
+
+
+
+
+
+
+
+
+
 
 /*footer formatting*/
-footer{
+footer .footer1{
   padding-top: 30px;
   padding-bottom: 10px;
   padding-left: 100px;
   padding-right: 100px;
-  border-top: 3px solid #6eccf5;
-  background-color: #00125c;
+  border-top: 3px solid #93d5dc;
+  background-color: #05406b;
   display: flex;
   justify-content: space-between;
 }
@@ -467,17 +516,57 @@ footer img{
   height: 30px;
   width: auto;
 }
-
 footer .medialinks a img{
+  margin-left: 10px;
   width: 30px;
   height: auto;
-  background-color: #6eccf5;
+  background-color: #93d5dc;
   border-radius: 20px;
+  border: 5px solid #93d5dc;
+} 
+footer .terms{
+  background-color: #454545;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+footer ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+footer ul li{
+  list-style: none;
+  padding-right: 10vw;
+  padding-left: 10vw;
+}
+
+footer ul li a{
+  font-size: 14px;
+  color: #93d5dc;
+  position: relative;
+  text-decoration: none;
+  border-bottom: 1px solid #454545;
+}
+
+footer ul li a:hover{
+  border-bottom: 1px solid #2495a1;
+  color: #2495a1;
+  transition: 0.4s;
+}
 @media (max-width: 900px){
-  footer{
+  footer .footer1{
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media (max-width: 660px){
+  footer ul li{
+    padding-right: 2vw;
+    padding-left: 2vw;
+  }
+  footer ul li a{
+    font-size: 12px;
   }
 }

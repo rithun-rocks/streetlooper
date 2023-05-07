@@ -54,19 +54,19 @@
 		<section class='white1'>
 			<div class="list">
 				<div>
-					<h2>82%</h2>
+					<h2><span class="num" data-val="82">00</span><span>%</span></h2>
 					<p>Improvement in collection efficiency</p>
 				</div>
 				<div>
-					<h2>47%</h2>
+					<h2><span class="num" data-val="47">00</span><span>%</span></h2>
 					<p>Reduction in missed sotres</p>
 				</div>
 				<div>
-					<h2>60%</h2>
+					<h2><span class="num" data-val="60">00</span><span>%</span></h2>
 					<p>Increase in customers</p>
 				</div>
 				<div>
-					<h2>#1</h2>
+					<h2><span>#</span><span class="num" data-val="1">1</span></h2>
 					<p>Obvious choice for sales software</p>
 				</div>
 			</div>
@@ -119,6 +119,20 @@
 					<p>Effortlessly manage everything you need</p>
 				</button>
 			</div>
+
+
+			<div class="comment">
+			  <img src="img\comment.png" alt="review" style="width:100%;">
+			  <div class="review_img">
+			  	<img src="img\review_img1.jpg" alt="Review image" style="width:10vw; height:auto; border-radius: 5vw;">
+			  </div>
+			  <div class="review">
+			    <h4>Saves a lot of time, money, and effort... intuitive and simple</h4>
+			    <p>"Saleslooper has a number of built-in features that saves a lot of time, money, and effort. The interface is intuitive and simple, making the switch a breeze. It eliminates the need for any additional third-party vendors."</p>
+			    <h5>Not a real name, CEO</h5>
+			    <h6>idek wut this is for</h6>
+			  </div>
+			</div>
 			<div class="space"></div>
 		</section>
 
@@ -129,11 +143,20 @@
 
 
 		<footer>
-			<img src="img\logo.png" alt="Streetlooper">
-			<div class="medialinks">
-				<a href="https://www.twitter.com" target="_blank"><img src="img\twitter.png"></a>
-				<a href="https://wwww.facebook.com" target="_blank"><img src="img\facebook.png"></a>
-				<a href="https://www.youtube.com" target="_blank"><img src="img\youtube.png"></a>
+			<div class="footer1">
+				<img src="img\logo.png" alt="Streetlooper">
+				<div class="medialinks">
+					<a href="https://www.twitter.com" target="_blank"><img src="img\twitter.png"></a>
+					<a href="https://wwww.facebook.com" target="_blank"><img src="img\facebook.png"></a>
+					<a href="https://www.youtube.com" target="_blank"><img src="img\youtube.png"></a>
+				</div>
+			</div>
+			<div class="terms">
+				<ul>
+				<li><a href="#terms">Terms of use</a></li>
+				<li><a href="#policy">Privacy Policy</a></li>
+				<li><a href="#copyright">© Copyright 2023</a></li>
+			</ul>
 			</div>
 		</footer>
 
@@ -147,10 +170,26 @@
 				var header = document.querySelector("header");
 				header.classList.toggle("sticky", window.scrollY > 0);
 			})
+
 			function toggle(){
 				var header = document.querySelector("header");
 				header.classList.toggle("active");
 			}
+
+			let valueDisplays = document.querySelectorAll(".num");
+			let interval = 750;
+			valueDisplays.forEach((valueDisplay) => {
+			  let startValue = 0;
+			  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+			  let duration = Math.floor(interval / endValue);
+			  let counter = setInterval(function () {
+			    startValue += 1;
+			    valueDisplay.textContent = startValue;
+			    if (startValue == endValue) {
+			      clearInterval(counter);
+			    }
+			  }, duration);
+			});
 		</script >
 	</body>
 </html>
