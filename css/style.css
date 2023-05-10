@@ -144,6 +144,20 @@ header.sticky{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*blue 1 alignment*/
 .blue1{
   padding-left: 100px;
@@ -155,7 +169,7 @@ header.sticky{
 }
 
 /*blue 1 text alignment*/
-.blue1 .textbox{
+.blue1 .text{
   float:left;
   color: #fff;
   font-family: 'Calibri';
@@ -163,19 +177,19 @@ header.sticky{
 }
 
 /*blue 1 text sizing and formatting*/
-.blue1 .textbox h1{
+.blue1 .text h1{
   font-size: 6vw;
 }
-.blue1 .textbox h2{
+.blue1 .text h2{
   font-size: 6vw;
   color: #93d5dc;
 }
-.blue1 .textbox h3{
+.blue1 .text h3{
   font-size: 3.2vw;
   font-family: 'Calibri', monospace;
   padding-top: 10px;
 }
-.blue1 .textbox p{
+.blue1 .text p{
   padding-top: 50px;
   font-size: 1.7vw;
   font-family: 'Roboto Light', sans-serif;
@@ -226,25 +240,25 @@ header.sticky{
     float: none;
     max-width: 100%;
   }
-  .blue1 .textbox{
+  .blue1 .text{
     float: none;
     max-width: 100%;
     text-align: center;
     padding-bottom: 100px;
   } 
-  .blue1 .textbox h1{
+  .blue1 .text h1{
     font-size: 10vw;
   }
-  .blue1 .textbox h2{
+  .blue1 .text h2{
     font-size: 9vw;
     color: #05406b;
   }
-  .blue1 .textbox h3{
+  .blue1 .text h3{
     font-size: 4vw;
     font-family: 'Calibri', monospace;
     padding-top: 10px;
   }
-  .blue1 .textbox p{
+  .blue1 .text p{
     padding-top: 30px;
     font-size: 2.2vw;
     font-family: 'Roboto Light', sans-serif;
@@ -315,11 +329,11 @@ header.sticky{
 }
 
 /*white 1 space adjustment*/
-.white1 .space{
+.space{
   margin-top: 300px;
 }
 /*white 1 text alignment*/
-.white1 .textbox{
+.format_textbox{
   position: relative;
   margin-top: 100px;
   width: 80%;
@@ -328,28 +342,28 @@ header.sticky{
 }
 
 /*white 1 text formatting*/
-.white1 .textbox h1{
+.format_textbox h1{
   font-size: 44px;
   padding-bottom: 24px;
   color: #444444;
   text-align: center;
 }
-.white1 .textbox p{
+.format_textbox p{
   font-size: 20px;
   color: #555555;
   text-align: center;
 }
 
 /*white 1 image marquee*/
-.white1 .textbox marquee{
+.format_textbox marquee{
   display: inline-block;
   padding-top: 50px;
   white-space: nowrap;
 }
-.white1 .textbox div{
+.format_textbox div{
   display: inline-block;
 }
-.white1 .textbox marquee img{
+.format_textbox marquee img{
   height: 150px;
   width: 150px;
   display: inline-block;
@@ -357,10 +371,10 @@ header.sticky{
 
 /*white 1 resolution adjustment*/
 @media(max-width: 960px){
-  .white1 .textbox{
+  .format_textbox{
     width: 90%;
   }
-  .white1 .textbox h1{
+  .format_textbox h1{
     font-size: 36px;
   }
   .textbox{
@@ -400,7 +414,7 @@ header.sticky{
 
 
 /*4 button grid*/
-.white1 .buttons {
+.format_buttons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
   grid-gap: 30px;
@@ -412,7 +426,7 @@ header.sticky{
 }
 /*grid resolution adjustments*/
 @media (max-width: 900px) {
-  .white1 .buttons {
+  .format_buttons {
     margin-left: 10px;
     margin-right: 10px;
     grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
@@ -420,7 +434,7 @@ header.sticky{
   }
 }
 /*button formatting*/
-.white1 .buttons button {
+.format_buttons button {
   border: 0px solid #fff;
   background: #e2f6f8;
   width: 100%;
@@ -430,25 +444,34 @@ header.sticky{
   border-radius: 5px;
 }
 /*button hover effect*/
-.white1 .buttons button:hover{
+.format_buttons button:hover{
   transform: translate(5px,5px);
   box-shadow: -10px 10px 0px #cccccc; 
   transition: 0.4s;
 }
 /*button content formatting*/
-.white1 .buttons button img{
+.format_buttons button img{
   width: 100px;
   height: auto;
 }
-.white1 .buttons button h2{
+.format_buttons button h2{
   font-size: 32px;
   font-family: Calibri;
 }
-.white1 .buttons button p{
+.format_buttons button p{
   font-size: 20px;
 }
 
-.comment {
+
+
+
+
+
+
+
+
+/*review comment*/
+.format_comment {
   margin-top: 10%;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -491,6 +514,107 @@ header.sticky{
   padding-top: 0.5%;
   padding-bottom: 2%;
 }
+
+
+
+
+
+.blue2{
+  padding-left: 10vw;
+  padding-right: 10vw;
+  background-color: #05406b;
+  margin-top: -250px;
+  color: #ffffff;
+  text-align: center;
+}
+.blue2 h1{
+  padding-top: 50px;
+  font-size: 3.5vw;
+}
+
+.blue2 p{
+  padding-top: 50px;
+  font-size: 1.4vw;
+  font-family: 'Roboto Light', sans-serif;
+  padding-bottom: 50px;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.slider-container {
+  width: calc(100% * 3);
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  width: calc(100% / 3);
+}
+
+.slider-item button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+.slider-item h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.slider-item p {
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.slider-controls button {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #333;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+.slider-controls button:focus {
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
