@@ -4,6 +4,7 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
+
 body{
   min-height: 1000px;
 }
@@ -538,72 +539,6 @@ header.sticky{
   font-family: 'Roboto Light', sans-serif;
   padding-bottom: 50px;
 }
-
-.slider {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.slider-container {
-  width: calc(100% * 3);
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slider-item {
-  width: calc(100% / 3);
-}
-
-.slider-item button {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  padding: 10px;
-  background-color: #f2f2f2;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-}
-
-.slider-item h2 {
-  font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.slider-item p {
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.slider-controls {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
-.slider-controls button {
-  background-color: #f2f2f2;
-  border: none;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #333;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-}
-
-.slider-controls button:focus {
-  outline: none;
-}
-
-
-
 
 
 
