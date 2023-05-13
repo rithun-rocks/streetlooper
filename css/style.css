@@ -434,6 +434,13 @@ header.sticky{
     grid-gap: 20px;
   }
 }
+@media (min-width:900px) {
+  .format_buttons button {  
+    padding: 50px;
+    padding-bottom: 70px;
+  }
+}
+
 /*button formatting*/
 .format_buttons button {
   border: 0px solid #fff;
@@ -444,6 +451,7 @@ header.sticky{
   text-align: center;
   border-radius: 5px;
 }
+
 /*button hover effect*/
 .format_buttons button:hover{
   transform: translate(5px,5px);
@@ -452,7 +460,7 @@ header.sticky{
 }
 /*button content formatting*/
 .format_buttons button img{
-  width: 100px;
+  width: 70px;
   height: auto;
 }
 .format_buttons button h2{
@@ -473,7 +481,7 @@ header.sticky{
 
 /*review comment*/
 .format_comment {
-  margin-top: 10%;
+  margin-top: 150px;
   margin-left: 5vw;
   margin-right: 5vw;
   position: relative;
@@ -539,6 +547,59 @@ header.sticky{
   font-family: 'Roboto Light', sans-serif;
   padding-bottom: 50px;
 }
+
+
+
+
+.carousel-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.carousel-buttons {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+}
+
+.carousel img {
+  width: calc(100% / 3);
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.prev-btn,
+.next-btn {
+  position: relative;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: #05406b;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: -55%;
+  top: 11vw;
+}
+
+.next-btn {
+  right: -55%;
+  top: 11vw;
+}
+
+
 
 
 
