@@ -11,10 +11,17 @@
 		<!--navigation bar-->
 		<header>
 			<a href="web.html"><img src="img\logo.png" alt="Streetlooper"></a>
-			<ul>
+			<ul class="nav-list">
 				<li><a href="#home">HOME</a></li>
 				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#shops">SHOPS</a></li>
+				<li>
+					<a href="#shops">SHOPS</a>
+					<ul class="nav-drop">
+						<li><a href="#shop1">random text</a></li>
+						<li><a href="#shop2">random text</a></li>
+						<li><a href="#shop3">random text</a></li>
+					</ul>
+				</li>
 				<li><a href="#review">REVIEW</a></li>
 				<li><a href="#contact">CONTACT</a></li>
 			</ul>
@@ -159,9 +166,9 @@
 			    <img class="carousel-img" src="img\slider_2.png" alt="Image 2">
 			    <img class="carousel-img" src="img\slider_3.png" alt="Image 3">
 
-			    <img class="carousel-img" src="img\slider_1.png" alt="Image 4">
-			    <img class="carousel-img" src="img\slider_2.png" alt="Image 5">
-			    <img class="carousel-img" src="img\slider_3.png" alt="Image 6">
+			    <img class="carousel-img" src="img\slider_4.png" alt="Image 4">
+			    <img class="carousel-img" src="img\slider_5.png" alt="Image 5">
+			    <img class="carousel-img" src="img\slider_6.png" alt="Image 6">
 			  </div>
 
 		</section>
@@ -206,7 +213,30 @@ window.addEventListener("scroll", function(){
 	header.classList.toggle("sticky", window.scrollY > 0);
 })
 
-
+//dropdown navbar
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
 
 // hamburger menu
 function toggle(){
@@ -245,45 +275,24 @@ function isInViewport(element) {
 }
 //counter numbers - end
 
-//sliders
+// Sliders
 const carousel = document.querySelector('.carousel');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 
 let direction;
-let events = {
-  mouse: {
-    down: "mousedown",
-    move: "mousemove",
-    up: "mouseup",
-  },
-  touch: {
-    down: "touchstart",
-    move: "touchmove",
-    up: "touchend",
-  },
-};
+let startX;
+let currentX;
+let translateX = 0;
 
-let deviceType = "";
-const isTouchDevice = () => {
-  try {
-    document.createEvent("TouchEvent");
-    deviceType = "touch";
-    return true;
-  } catch (e) {
-    deviceType = "mouse";
-    return false;
-  }
-};
-
-prevBtn.addEventListener('click', () => {
+nextBtn.addEventListener('click', () => {
   direction = 'prev';
   carousel.style.justifyContent = 'flex-end';
   carousel.prepend(carousel.lastElementChild);
   carousel.style.transform = 'translateX(100%)';
 });
 
-nextBtn.addEventListener('click', () => {
+prevBtn.addEventListener('click', () => {
   direction = 'next';
   carousel.style.justifyContent = 'flex-start';
   carousel.style.transform = 'translateX(-100%)';
@@ -302,6 +311,39 @@ carousel.addEventListener('transitionend', () => {
     carousel.style.transition = 'transform 0.3s ease-in-out';
   });
 });
+
+carousel.addEventListener('touchstart', touchStart);
+carousel.addEventListener('touchmove', touchMove);
+carousel.addEventListener('touchend', touchEnd);
+
+function touchStart(event) {
+  const touch = event.touches[0];
+  startX = touch.clientX;
+  currentX = startX;
+}
+
+function touchMove(event) {
+  const touch = event.touches[0];
+  currentX = touch.clientX;
+  const diffX = currentX - startX;
+  translateX = diffX;
+  carousel.style.transform = `translateX(${translateX}px)`;
+}
+
+function touchEnd() {
+  if (translateX > 100) {
+    direction = 'prev';
+    carousel.style.justifyContent = 'flex-end';
+    carousel.prepend(carousel.lastElementChild);
+  } else if (translateX < -100) {
+    direction = 'next';
+    carousel.style.justifyContent = 'flex-start';
+    carousel.appendChild(carousel.firstElementChild);
+  }
+  carousel.style.transition = 'transform 0.3s ease-in-out';
+  carousel.style.transform = 'translateX(0)';
+}
+
 
 		</script >
 	</body>

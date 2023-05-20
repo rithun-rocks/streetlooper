@@ -131,8 +131,37 @@ header.sticky{
   }
 }
 
+.nav-drop {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  border-radius: 3px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.nav-drop a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-drop a:hover{
+  
+  background-color: #e2f6f8;
+  transition: 0.4s;
+}
 
 
+.nav-list:hover .nav-drop {
+  display: block;
+}
 
 
 
@@ -584,6 +613,17 @@ header.sticky{
   padding-right: 10px;
 }
 
+@media(max-width: 900px){
+  .prev-btn img,
+  .next-btn img{
+    height: px;
+    width: 0px;
+  }
+
+  .carousel-container{
+    width: 100%;
+  }
+}
 .prev-btn,
 .next-btn {
   position: relative;
