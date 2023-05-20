@@ -336,7 +336,6 @@ header.sticky{
 /*white 1 text alignment*/
 .format_textbox{
   position: relative;
-  margin-top: 100px;
   width: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -433,10 +432,14 @@ header.sticky{
     grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
     grid-gap: 20px;
   }
+  .format_buttons button{
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
 }
 @media (min-width:900px) {
   .format_buttons button {  
-    padding: 50px;
+    padding-top: 50px;
     padding-bottom: 70px;
   }
 }
@@ -487,6 +490,11 @@ header.sticky{
   position: relative;
 }
 
+@media(max-width:900px){
+  .format_comment{
+    margin-top: 300px;
+  }
+}
 .review_img {
   position: absolute;
   bottom: 50%;
