@@ -590,7 +590,7 @@ header.sticky{
   width: 2.5vw;
   height: 2.5vw;
   background-color: #05406b;
-  border: 2px solid #ccc;
+  border: 2px solid #05406b;
   border-radius: 50%;
   font-size: 20px;
   color: #ccc;
@@ -598,13 +598,13 @@ header.sticky{
 }
 
 .prev-btn {
-  left: -55%;
-  top: 11vw;
+  left: -40vw;
+  top: 13vw;
 }
 
 .next-btn {
-  right: -55%;
-  top: 11vw;
+  right: -40vw;
+  top: 13vw;
 }
 
 
