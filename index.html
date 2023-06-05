@@ -14,14 +14,7 @@
 			<ul class="nav-list">
 				<li><a href="#home">HOME</a></li>
 				<li><a href="#about">ABOUT</a></li>
-				<li>
-					<a href="#shops">SHOPS</a>
-					<ul class="nav-drop">
-						<li><a href="#shop1">random text</a></li>
-						<li><a href="#shop2">random text</a></li>
-						<li><a href="#shop3">random text</a></li>
-					</ul>
-				</li>
+				<li><a href="#shop">SHOP</a></li>
 				<li><a href="#review">REVIEW</a></li>
 				<li><a href="#contact">CONTACT</a></li>
 			</ul>
@@ -130,6 +123,7 @@
 			</div>
 
 
+			  <!-- 
 			<div class="format_comment">
 			  <img src="img\comment.png" alt="review" style="width:100%;">
 			  <div class="review_img">
@@ -142,7 +136,9 @@
 			    <h6>idek wut this is for</h6>
 			  </div>
 			</div>
-			<div class="space"></div>
+			-->
+
+			<div class="space2"></div>
 		</section>
 
 
@@ -206,37 +202,13 @@
 
 
 		<!--script-->
+
 		<script type="text/javascript">
 // sticky nav bar
 window.addEventListener("scroll", function(){
 	var header = document.querySelector("header");
 	header.classList.toggle("sticky", window.scrollY > 0);
 })
-
-//dropdown navbar
-(function($) { // Begin jQuery
-  $(function() { // DOM ready
-    // If a link has a dropdown, add sub menu toggle.
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.nav-dropdown').toggle();
-      // Close one dropdown when selecting another
-      $('.nav-dropdown').not($(this).siblings()).hide();
-      e.stopPropagation();
-    });
-    // Clicking away from dropdown will remove the dropdown class
-    $('html').click(function() {
-      $('.nav-dropdown').hide();
-    });
-    // Toggle open and close nav styles on click
-    $('#nav-toggle').click(function() {
-      $('nav ul').slideToggle();
-    });
-    // Hamburger to X toggle
-    $('#nav-toggle').on('click', function() {
-      this.classList.toggle('active');
-    });
-  }); // end DOM ready
-})(jQuery); // end jQuery
 
 // hamburger menu
 function toggle(){
