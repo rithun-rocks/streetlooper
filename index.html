@@ -5,22 +5,37 @@
 		<meta name="viewport" content="width=device-width, initial scale=1.0">
 		<title>Sales Looper</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<meta name="description" content="Streetlooper's innovative sales software is designed to perform all the major functions of a marketing practice. Founded with the principles of buisness">
 	</head>
 	<body>
-		<!--navigation bar-->
-		<header>
-			<a href="web.html"><img src="img\logo.png" alt="Streetlooper"></a>
-			<ul class="nav-list">
-				<li><a href="#home">HOME</a></li>
-				<li><a href="#about">ABOUT</a></li>
-				<li><a href="#shop">SHOP</a></li>
-				<li><a href="#review">REVIEW</a></li>
-				<li><a href="#contact">CONTACT</a></li>
-			</ul>
-			<!--js code for sticky navigation bar-->
-			<div class='toggle' onclick="toggle()"></div>
-		</header>
+		  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+		  <a class="navbar-brand" href="#"><img src="img\logo.png"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse " id="navbarNav">
+		    <ul class="navbar-nav  mr-auto ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#serve">Who we serve</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#software">Software</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Dropdown
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#">something</a>
+		          <a class="dropdown-item" href="#">more something</a>
+		          <a class="dropdown-item" href="#">something else here</a>
+		        </div>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+		
 
 
 
@@ -123,23 +138,7 @@
 			</div>
 
 
-			  <!-- 
-			<div class="format_comment">
-			  <img src="img\comment.png" alt="review" style="width:100%;">
-			  <div class="review_img">
-			  	<img src="img\review_img1.jpg" alt="Review image" style="width:10vw; height:auto; border-radius: 5vw;">
-			  </div>
-			  <div class="review">
-			    <h4>Saves a lot of time, money, and effort... intuitive and simple</h4>
-			    <p>"Saleslooper has a number of built-in features that saves a lot of time, money, and effort. The interface is intuitive and simple, making the switch a breeze. It eliminates the need for any additional third-party vendors."</p>
-			    <h5>Not a real name, CEO</h5>
-			    <h6>idek wut this is for</h6>
-			  </div>
-			</div>
-			-->
 
-			<div class="space2"></div>
-		</section>
 
 
 
@@ -169,9 +168,150 @@
 
 		</section>
 
-		<div class="space"></div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+		<!-- white 2 section -->
+		<section class="white2">
+			<div class="format_comment">
+			  <img src="img\comment.png" alt="review" style="width:100%;">
+			  <div class="review_img">
+			  	<img src="img\review_img1.jpg" alt="Review image" style="width:10vw; height:auto; border-radius: 5vw;">
+			  </div>
+			  <div class="review">
+			    <h4>Saves a lot of time, money, and effort... intuitive and simple</h4>
+			    <p>"Saleslooper has a number of built-in features that saves a lot of time, money, and effort. The interface is intuitive and simple, making the switch a breeze. It eliminates the need for any additional third-party vendors."</p>
+			    <h5>Not a real name, CEO</h5>
+			    <h6>idek wut this is for</h6>
+			  </div>
+			</div>
+
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- blue 3 section -->
+		<section class="blue3">
+			<h1> Packed With Powerful Features </h1>
+			<p>Built from the ground up for efficiency and optimized workflows, Saleslooper takes user experience seriously. We saw the many features excluded by other platforms, as well as the numerous add-on software required to achieve fully-functional practice management. The result is Saleslooper's all-in-one, cloud-based software—packed with powerful features!</p>
+		  <div class="tableContainer">
+		  <table>
+		    <thead>
+		      <tr class="columnHeaders">
+		        <th class="columnHeader emptyCell" title="Empty cell"></th>
+		        <th scope="col" class="columnHeaderspecial"><img src="img\logo2.png" alt="Streetlooper" style="height:1.6vw; min-height: 12px; width:auto;"></th>
+		        <th scope="col" class="columnHeader">maybe saleslooper</th>
+		        <th scope="col" class="columnHeader">not saleslooper</th>
+		        <th scope="col" class="columnHeader">prolly saleslooper</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <!-- Start: This is the mobile view column group -->
+		      <tr class="mobileColumnGroup">
+		        <th scope="colgroup" colspan="4"><span>Skills</span></th>
+		      </tr>
+		      <!-- End: This is the mobile view column group -->
+		      <tr class="tableBodyRow">
+		        <th scope="row" class="rowHeader">Skills</th>
+		        <td class="sl">
+		          <span title="Feature is included" class="featureCheckspecial">✔</span>
+		        </td>
+		        <td>
+		          <span title="Feature is not included" class="featureX">✘</span>
+		        </td>
+		        <td>
+		          <span title="Feature is not included" class="featureX">✘</span>
+		        </td>
+		        <td>
+		          <span title="Feature is not included" class="featureX">✘</span>
+		        </td>
+		      </tr>
+		      <!-- Start: This is the mobile view column group -->
+		      <tr class="mobileColumnGroup">
+		        <th scope="colgroup" colspan="4"><span>Boredom</span></th>
+		      </tr>
+		      <!-- End: This is the mobile view column group -->
+		      <tr class="tableBodyRow">
+		        <th scope="row" class="rowHeader">Boredom</th>
+		        <td class="sl">
+		          <span title="Feature is included" class="featureCheckspecial">✔</span>
+		        </td>
+		        <td>
+		          <span title="Feature is included" class="featureCheck">✔</span>
+		        </td>
+		        <td>
+		          <span title="Feature is included" class="featureCheck">✔</span>
+		        </td>
+		        <td>
+		          <span title="Feature is not included" class="featureX">✘</span>
+		        </td>
+		      </tr>
+		      <!-- Start: This is the mobile view column group -->     
+		      <tr class="mobileColumnGroup">
+		        <th scope="colgroup" colspan="4"><span>Im out of ideas</span></th>
+		      </tr>
+		      <!-- End: This is the mobile view column group -->
+		      <tr class="tableBodyRow">
+		        <th scope="row" class="rowHeader">Im out of ideas</th>
+		        <td class="sl">
+		          <span title="Feature is included" class="featureCheckspecial">✔</span>
+		        </td>
+		        <td>
+		          <span title="Feature is included" class="featureCheck">✔</span>
+		        </td>
+		        <td>
+		          <span title="Feature is not included" class="featureX">✘</span>
+		        </td>
+		        <td>
+		          <span title="Feature is not included" class="featureX">✘</span>
+		        </td>
+		      </tr>
+		      <!-- Start: This is the mobile view column group -->
+		      <tr class="mobileColumnGroup">
+		        <th scope="colgroup" colspan="4"><span>Insert text here</span></th>
+		      </tr>
+		      <!-- End: This is the mobile view column group -->
+		      <tr class="tableBodyRow">
+		        <th scope="row" class="rowHeader">Insert text here</th>
+		        <td class="sl">
+		          <span title="Feature is not included" class="featureCheckspecial">✔</span>
+		        </td>
+		        <td>
+		          <span title="Feature is included" class="featureCheck">✔</span>
+		        </td>
+		        <td>
+		          <span title="Feature is not included" class="featureX">✘</span>
+		        </td>
+		        <td>
+		          <span title="Feature is not included" class="featureX">✘</span>
+		        </td>
+		      </tr>
+		    </tbody>
+		  </table>
+		  <div class="horizontal-scroller">
+		    <div class="horizontal-scroller-content"></div>
+		  </div>
+		</div>
+		</section>
 
 
 
@@ -204,18 +344,6 @@
 		<!--script-->
 
 		<script type="text/javascript">
-// sticky nav bar
-window.addEventListener("scroll", function(){
-	var header = document.querySelector("header");
-	header.classList.toggle("sticky", window.scrollY > 0);
-})
-
-// hamburger menu
-function toggle(){
-	var header = document.querySelector("header");
-	header.classList.toggle("active");
-			}
-
 
 
 // counting number
@@ -317,6 +445,126 @@ function touchEnd() {
 }
 
 
+
+
+// table
+document.addEventListener("DOMContentLoaded", function() {
+  try {
+    var compTable = document.querySelector(".tableContainer");
+    if (compTable) {
+      var tableBodyRowData = compTable.querySelectorAll(".tableBodyRow td, .tableBodyRow th");
+      var caption = compTable.querySelector("caption");
+      var captionHeight = caption ? caption.offsetHeight : 0;
+      var compTableBody = compTable.querySelector("tbody");
+      var compTableHead = compTable.querySelector("thead");
+      var columnHeaders = compTable.querySelectorAll(".columnHeader");
+      var columnHeadersRow = compTableHead.querySelector(".columnHeaders");
+      var columnHeadersNotEmpty = compTableHead.querySelectorAll(".columnHeader:not(.emptyCell)");
+      var horizontalScroller = compTable.querySelector(".horizontal-scroller");
+      var horizontalScrollerContent = horizontalScroller.querySelector(".horizontal-scroller-content");
+      var originalTablePosition = "";
+
+      function checkTableOffset() {
+        var compTableRect = compTable.getBoundingClientRect();
+        var compTableHeadRect = compTableHead.getBoundingClientRect();
+        var compTableBodyRect = compTableBody.getBoundingClientRect();
+        var compTableHeadRowRect = columnHeadersRow.getBoundingClientRect();
+        horizontalScroller.style.left = compTableRect.left + "px";
+        horizontalScroller.style.width = compTableRect.width + "px";
+        horizontalScrollerContent.style.width = compTable.scrollWidth + "px";
+        if (compTableRect.top <= 0 && compTableRect.height-50 > window.innerHeight) {
+          calculateColumnHeaderWidthsAndPos(compTableRect, compTableHeadRect, compTableBodyRect);
+        } else if (compTableBodyRect.top > compTableHeadRect.bottom) {
+          resetTable();
+        }
+
+        if (compTableRect.bottom <= window.innerHeight || compTableRect.top > window.innerHeight) {
+          horizontalScroller.style.visibility = "hidden";
+        } else if (compTableRect.top <= window.innerHeight && compTable.clientWidth < compTable.scrollWidth) {
+          horizontalScroller.style.visibility = "visible";
+        }
+
+        if (compTableRect.bottom <= compTableHeadRect.bottom && !Array.from(compTableHead.classList).includes("atBottom")) {
+          compTableHead.classList.add("atBottom");
+        } else if (compTableHeadRect.top >= 0) {
+          compTableHead.classList.remove("atBottom");
+        }
+      }
+
+      function scrollColumnHeader(compTable) {
+        compTableHead.scrollLeft = compTable.scrollLeft;
+      }
+
+      function setColWidths(compTableRect) {
+        compTableHead.style.width = compTableRect.width + "px";
+        compTableHead.style.left = compTableRect.left + "px";
+        for (let i = 0; i < columnHeaders.length; i++) {
+          var tableBodyRowDataRect = tableBodyRowData[i].getBoundingClientRect();
+          if (Array.from(compTableHead.classList).includes("stickyHeader")) {
+            columnHeaders[i].style.minWidth = getComputedStyle(tableBodyRowData[i]).width;
+          } else {
+            columnHeaders[i].style.minWidth = "initial";
+          }
+        }
+      }
+
+      function calculateColumnHeaderWidthsAndPos(compTableRect, compTableHeadRect, compTableBodyRect) {
+        compTableHead.classList.add("stickyHeader");
+        scrollColumnHeader(compTable);
+        setColWidths(compTableRect);
+
+        var xMatrix = parseFloat(getComputedStyle(compTableBody).transform.substring(getComputedStyle(compTableBody).transform.indexOf("(")+1, getComputedStyle(compTableBody).transform.lastIndexOf(")")).split(",")[5]);
+        if ((xMatrix == 0 || getComputedStyle(compTableBody).transform == 'none')) {
+          compTableBody.style.transform = "translateY(" + (compTableHead.offsetHeight - captionHeight) + "px)";
+          compTable.style.paddingBottom = (compTableHead.offsetHeight - captionHeight) + "px";
+        }
+      }
+
+      function resetTable() {
+        compTableHead.classList.remove("stickyHeader");
+        compTableBody.style.transform = "translateY(0px)";
+        compTable.style.paddingBottom = "0px";
+      }
+
+      window.addEventListener("scroll", function() {
+        checkTableOffset();
+      });
+
+      window.addEventListener("resize", function () {
+        resetTable();
+        checkTableOffset();
+      });
+
+      compTable.addEventListener("scroll", function(e) {
+        if (Array.from(compTableHead.classList).includes("stickyHeader") && !Array.from(compTableHead.classList).includes("atBottom")) {
+          scrollColumnHeader(e.target);
+        }
+        horizontalScroller.scrollLeft = e.target.scrollLeft;
+      });
+
+      horizontalScroller.addEventListener("scroll", function(e) {
+        if (Array.from(compTableHead.classList).includes("stickyHeader") && !Array.from(compTableHead.classList).includes("atBottom")) {
+          scrollColumnHeader(e.target);
+        }
+        compTable.scrollLeft = e.target.scrollLeft;
+      });
+
+      compTableHead.addEventListener("scroll", function(e) {
+        horizontalScroller.scrollLeft = e.target.scrollLeft;
+        compTable.scrollLeft = e.target.scrollLeft;
+      });
+
+      var compTableRect = compTable.getBoundingClientRect();
+      setColWidths(compTableRect);
+      checkTableOffset();
+    }
+  } catch(error) {
+    console.log(error);
+  }
+});
 		</script >
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
