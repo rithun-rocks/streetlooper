@@ -522,8 +522,16 @@ nav img{
   right: -40vw;
   top: 13vw;
 }
+.prev-btn:focus, .prev-btn:active:focus, .prev-btn.active:focus{
+    outline:none;
+    box-shadow:none;
+}
 
 
+.next-btn:focus, .next-btn:active:focus, .next-btn.active:focus{
+    outline:none;
+    box-shadow:none;
+}
 
 
 
@@ -733,8 +741,8 @@ footer ul{
 
 footer ul li{
   list-style: none;
-  padding-right: 10vw;
-  padding-left: 10vw;
+  padding-right:3vw;
+  padding-left: 3vw;
 }
 
 footer ul li a{
