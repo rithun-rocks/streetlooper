@@ -51,6 +51,12 @@
 				<h2>Sales Looper</h2>
 				<h3>Cloud-Based, Online Sales Practice Management Software</h3>
 				<p>With state-of-the-art features and an award-winning, cloud-based platform, discover why Saleslooper time and again proves to be an industry leader and the favorite practice management software for sales</p>
+				<div class="award_img">
+					<a href="www.carestack.com"><img src="img\b1_1.png" alt=""></a>		
+					<a href="www.carestack.com"><img src="img\b1_2.png" alt=""></a>
+					<a href="www.carestack.com"><img src="img\b1_3.png" alt=""></a>
+					<a href="www.carestack.com"><img src="img\b1_3.png" alt=""></a>
+				</div>
 				<button class='download'>Book Free Demo</button>
 			</div>
 			<div class='imgbox'>
@@ -215,6 +221,39 @@
 			    <h6>idek wut this is for</h6>
 			  </div>
 			</div>
+			<div class="textbox">
+				<h4>Why CareStack?</h4>
+				<h5>CareStack of course offers all the functionality and a sleek user interface you’re looking for in dental software, but the biggest benefits for dentists are in the results. Discover the difference that CareStack can make in improving practice efficiency and easing the burdens of managing your business!</h5>
+			</div>
+			<div class="combine">
+				<div class="format_collapse">
+					<button type="button" class="collapsible">Simplify Your Practice, Work, & Life</button>
+					<div class="content">
+					  <p>Move away from the complexities of using multiple software and manage everything you need through one modern cloud dental software. Gain more time to focus on what matters most—your patients, your team, and your life.</p>
+					</div>
+				</div>
+				<div class="format_collapse">
+					<button type="button" class="collapsible">Elevate smth smth smth</button>
+					<div class="content">
+					  <p>Move away from the complexities of using multiple software and manage everything you need through one modern cloud dental software. Gain more time to focus on what matters most—your patients, your team, and your life.</p>
+					</div>
+				</div>
+				<div class="format_collapse">
+					<button type="button" class="collapsible">Stream line billing or watev</button>
+					<div class="content">
+					  <p>Move away from the complexities of using multiple software and manage everything you need through one modern cloud dental software. Gain more time to focus on what matters most—your patients, your team, and your life.</p>
+					</div>
+				</div>
+				<div class="format_collapse">
+					<button type="button" class="collapsible">Drive efficiency ig</button>
+					<div class="content">
+					  <p>Move away from the complexities of using multiple software and manage everything you need through one modern cloud dental software. Gain more time to focus on what matters most—your patients, your team, and your life.</p>
+					</div>
+				</div>
+			</div>
+			<div class="imgbox"><img src="\img\collapse_1.png" alt=""></div>
+			
+			
 
 		</section>
 
@@ -242,6 +281,7 @@
 		        <th scope="col" class="columnHeader">maybe saleslooper</th>
 		        <th scope="col" class="columnHeader">not saleslooper</th>
 		        <th scope="col" class="columnHeader">prolly saleslooper</th>
+		        <th scope="col" class="columnHeader">saleswooper</th>
 		      </tr>
 		    </thead>
 		    <tbody>
@@ -254,6 +294,9 @@
 		        <th scope="row" class="rowHeader">Skills</th>
 		        <td class="sl">
 		          <span title="Feature is included" class="featureCheckspecial">✔</span>
+		        </td>
+		        <td>
+		          <span title="Feature is not included" class="featureX">✘</span>
 		        </td>
 		        <td>
 		          <span title="Feature is not included" class="featureX">✘</span>
@@ -284,7 +327,11 @@
 		        <td>
 		          <span title="Feature is not included" class="featureX">✘</span>
 		        </td>
+		        <td>
+		          <span title="Feature is not included" class="featureX">✘</span>
+		        </td>
 		      </tr>
+
 		      <!-- Start: This is the mobile view column group -->     
 		      <tr class="mobileColumnGroup">
 		        <th scope="colgroup" colspan="4"><span>Im out of ideas</span></th>
@@ -297,6 +344,9 @@
 		        </td>
 		        <td>
 		          <span title="Feature is included" class="featureCheck">✔</span>
+		        </td>
+		        <td>
+		          <span title="Feature is not included" class="featureX">✘</span>
 		        </td>
 		        <td>
 		          <span title="Feature is not included" class="featureX">✘</span>
@@ -324,6 +374,9 @@
 		        <td>
 		          <span title="Feature is not included" class="featureX">✘</span>
 		        </td>
+		        <td>
+		          <span title="Feature is not included" class="featureX">✘</span>
+		        </td>
 		      </tr>
 		    </tbody>
 		  </table>
@@ -332,6 +385,32 @@
 		  </div>
 		</div>
 		</section>
+
+
+
+
+
+
+
+
+
+
+		<section class="white3">
+			<div class="space3"></div>
+			<div class='format_textbox2'>
+				<div class="heading">
+					<h1>About Carestack</h1>
+					<h4>All-in-One, Cloud Dental Practice Management Software</h4>
+					<button>Book Free Demo</button>
+				</div>
+				<div class="text">
+					<p>CareStack’s innovative dental software is designed to perform all the major functions of a dental practice. Founded with the principles of simplicity, functionality, and usability, CareStack has been revolutionizing the dental space since its inception. Whereas legacy software vendors require multiple costly upgrades or add-on software, CareStack users enjoy all the same features (and more) in a single, fully-integrated platform. If you’re looking for a solution to increase practice efficiency while decreasing expenses and consolidating subscriptions, there is no better choice than CareStack. Trusted by over 2,000 US providers and growing, choose the dental software that’s scalable for growing dental start-ups and large DSOs, yet affordable for small mobile providers and single-office dental practices. Choose CareStack!</p>
+				</div>
+
+			</div>
+
+		</section>
+
 
 
 
@@ -582,6 +661,25 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(error);
   }
 });
+
+
+
+
+//collapse
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 		</script >
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
