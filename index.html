@@ -225,33 +225,36 @@
 				<h4>Why CareStack?</h4>
 				<h5>CareStack of course offers all the functionality and a sleek user interface you’re looking for in dental software, but the biggest benefits for dentists are in the results. Discover the difference that CareStack can make in improving practice efficiency and easing the burdens of managing your business!</h5>
 			</div>
-			<div class="combine">
-				<div class="format_collapse">
-					<button type="button" class="collapsible">Simplify Your Practice, Work, & Life</button>
-					<div class="content">
-					  <p>Move away from the complexities of using multiple software and manage everything you need through one modern cloud dental software. Gain more time to focus on what matters most—your patients, your team, and your life.</p>
+				<div>
+				<div class="combine">
+					<div class="format_collapse">
+						<button type="button" class="collapsible active">Simplify Your Practice, Work, & Life<span class="btn_text"> </span></button>
+						<div class="content" style="display: block;">
+						  <p>Move away from the complexities of using multiple software and manage everything you need through one modern cloud dental software. Gain more time to focus on what matters most—your patients, your team, and your life.</p>
+
+						</div>
+					</div>
+					<div class="format_collapse">
+						<button type="button" class="collapsible">Elevate smth smth smth<span class="btn_text"> </span></button>
+						<div class="content">
+						  <p>Move away from the complexities of using multiple software and manage everything you need through one modern cloud dental software. Gain more time to focus on what matters most—your patients, your team, and your life.</p>
+						</div>
+					</div>
+					<div class="format_collapse">
+						<button type="button" class="collapsible">Stream line billing or watev<span class="btn_text"> </span></button>
+						<div class="content">
+						  <p>Move away from the complexities of using multiple software and manage everything you need through one modern cloud dental software. Gain more time to focus on what matters most—your patients, your team, and your life.</p>
+						</div>
+					</div>
+					<div class="format_collapse">
+						<button type="button" class="collapsible">Drive efficiency ig<span class="btn_text"> </span></button>
+						<div class="content">
+						  <p>Move away from the complexities of using multiple software and manage everything you need through one modern cloud dental software. Gain more time to focus on what matters most—your patients, your team, and your life.</p>
+						</div>
 					</div>
 				</div>
-				<div class="format_collapse">
-					<button type="button" class="collapsible">Elevate smth smth smth</button>
-					<div class="content">
-					  <p>Move away from the complexities of using multiple software and manage everything you need through one modern cloud dental software. Gain more time to focus on what matters most—your patients, your team, and your life.</p>
-					</div>
-				</div>
-				<div class="format_collapse">
-					<button type="button" class="collapsible">Stream line billing or watev</button>
-					<div class="content">
-					  <p>Move away from the complexities of using multiple software and manage everything you need through one modern cloud dental software. Gain more time to focus on what matters most—your patients, your team, and your life.</p>
-					</div>
-				</div>
-				<div class="format_collapse">
-					<button type="button" class="collapsible">Drive efficiency ig</button>
-					<div class="content">
-					  <p>Move away from the complexities of using multiple software and manage everything you need through one modern cloud dental software. Gain more time to focus on what matters most—your patients, your team, and your life.</p>
-					</div>
-				</div>
+				<div class="collapse_imgbox"><img src="img\collapse_1.png" alt=""></div>
 			</div>
-			<div class="imgbox"><img src="\img\collapse_1.png" alt=""></div>
 			
 			
 
@@ -669,9 +672,32 @@ document.addEventListener("DOMContentLoaded", function() {
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
+// Check if an element is already active
+function isActive(element) {
+  return element.classList.contains("active");
+}
+
+// Change the display of all content elements to none
+
+
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    // Remove the active class from all elements
+    for (var j = 0; j < coll.length; j++) {
+      if (isActive(coll[j])) {
+        coll[j].classList.remove("active");
+      }
+    }
+	for (i = 0; i < coll.length; i++) {
+	  var content = coll[i].nextElementSibling;
+	  if (!isActive(coll[i])) {
+	    content.style.display = "none";
+	  }
+	}
+    // Add the active class to the clicked element
+    this.classList.add("active");
+
+    // Toggle the visibility of the content element
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
@@ -680,6 +706,10 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+
+
+
 		</script >
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

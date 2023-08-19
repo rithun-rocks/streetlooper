@@ -587,33 +587,35 @@ nav img{
   color: #555555;
   text-align: center;
 }
-
-.imgbox{
+.collapse_imgbox{
   float: right;
   max-width: 40%;
-  width:100%;
+}
+.collapse_imgbox img{
+  width: 100%;
   height: auto;
 }
 .combine{
   float: left;
   max-width: 60%;
 }
-.format_collapse{
+.format_collapse {
   margin-left: 70px;
   border-bottom: 1px solid #ccc;
 
 }
-
-.format_collapse .collapsible{
-  padding: 20px;
+.format_collapse button{
+  width: 100%;
   text-align: left;
+}
+
+.format_collapse .collapsible {
+  padding: 20px;
   outline: none;
   font-size: 24px;
   background-color: white;
   border: none;
-  display: inline-block;
 }
-
 
 .format_collapse .content {
   padding: 0 20px;
@@ -623,20 +625,38 @@ nav img{
   background-color: #e0f5eb;
 }
 
-.format_collapse .collapsible:after {
-  content: 'v';
-  padding-left: 100px;
+.format_collapse .btn_text:after {
+  content: '+';
+  float: right;
+  text-align: right;
   color: #ccc;
+  margin-right: 10px;
 }
-.format_collapse .active{
+
+.format_collapse .active .btn_text:after {
+  content: "-";
+  float: right;
+  text-align: right;
+  color: #ccc;
+  margin-right: 10px;
+}
+.format_collapse .active {
   background-color: #e0f5eb;
 }
-.format_collapse .active:after {
-  content: "ʌ";
-  color: #ccc;
+
+@media(max-width:1000px) {
+  .combine{
+  max-width: 90%;
+  }
+  .collapse_imgbox{
+    float: none;
+  max-width: 100%;
+  }
+  .collapse_imgbox img{
+    width: 80%;
+    margin-left: 10%;
+  }
 }
-
-
 
 
 
