@@ -232,7 +232,7 @@ nav img{
 
 /*white 1 space adjustment*/
 .space{
-  margin-top: 350px;
+  margin-top: 400px;
 }
 .space2{
   margin-top: 400px;
@@ -267,6 +267,11 @@ nav img{
   text-align: center;
 }
 
+@media(max-width:900px){
+  .format_textbox h1{
+    font-size: 24px;
+  }
+}
 /*white 1 image marquee*/
 .format_textbox marquee{
   display: inline-block;
@@ -336,11 +341,12 @@ nav img{
   max-width: 1000px;
   height: 80%;
   max-height: 500px;
-
 }
 /*grid resolution adjustments*/
 @media (max-width: 900px) {
   .format_buttons {
+    margin-top: -150px;
+    margin-bottom: 600px;
     margin-left: 10px;
     margin-right: 10px;
     grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
@@ -474,6 +480,7 @@ nav img{
   text-align: center;
   padding-top: 50px;
 }
+
 .blue2 p{
   margin-left: auto;
   margin-right: auto;
@@ -484,7 +491,23 @@ nav img{
   font-family: 'Roboto Light', sans-serif;
 }
 
-
+@media(max-width:900px){
+  .blue2{
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .blue2 h1{
+    font-size: 36px;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .blue2 p{
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
 
 
 .carousel-container {
@@ -587,6 +610,11 @@ nav img{
   color: #555555;
   text-align: center;
 }
+@media(max-width:960px){
+  .white2 .textbox h4{
+    font-size: 32px;
+  }
+}
 .collapse_imgbox{
   float: right;
   max-width: 40%;
@@ -600,7 +628,7 @@ nav img{
   max-width: 60%;
 }
 .format_collapse {
-  margin-left: 70px;
+  margin-left: 7vw;
   border-bottom: 1px solid #ccc;
 
 }
@@ -646,11 +674,14 @@ nav img{
 
 @media(max-width:1000px) {
   .combine{
-  max-width: 90%;
+  max-width: 100%;
+  }
+  .format_collapse{
+    margin-left: 0vw;
   }
   .collapse_imgbox{
     float: none;
-  max-width: 100%;
+      max-width: 100%;
   }
   .collapse_imgbox img{
     width: 80%;
@@ -680,6 +711,7 @@ nav img{
   color: #ffffff;
   text-align: center;
 }
+
 .blue3 p{
   margin-left: auto;
   margin-right: auto;
@@ -689,6 +721,18 @@ nav img{
   text-align: center;
   font-family: 'Roboto Light', sans-serif;
   padding-bottom: 50px;
+}
+
+@media(max-width:900px){
+  .blue3 h1{
+    font-size: 36px;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .blue3 p{
+    max-width: 90%;
+  }
 }
 
 .blue3 table{
@@ -826,10 +870,10 @@ thead::-webkit-scrollbar {
   max-width: 40%;
 }
 .format_textbox2 .heading h1{
-  font-size: 60px;
+  font-size: 50px;
 }
 .format_textbox2 .heading h4{
-  font-size: 36px;
+  font-size: 32px;
   color: #2495a1;
 }
 .format_textbox2 .text p{
@@ -866,6 +910,11 @@ thead::-webkit-scrollbar {
 
 
 @media (max-width: 1000px){
+    .format_textbox2 .heading h4{
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   .format_textbox2{
     padding-left: 0vw;
   }
