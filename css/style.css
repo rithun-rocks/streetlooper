@@ -748,16 +748,12 @@ nav img{
     display: none;
   }
 }
-@media(max-width: 769px) {
-  .rowHeader, .emptyCell {
-    display: none;
-  }
-}
+
 .featureCheckspecial{
   box-shadow: 0px 0px 100px #111111;
 }
 .tableContainer {
-  overflow: auto;
+  overflow-x: auto;
   overflow-anchor: none;
   position: relative;
 }
@@ -841,12 +837,14 @@ thead::-webkit-scrollbar {
 .horizontal-scroller-content {
   height: 30px;
 }
-
-
-
-
-
-
+tr>th:nth-child(1),tr>td:nth-child(1){
+  position: sticky;
+  left: 0;
+}
+tr>th:nth-child(2),tr>td:nth-child(2){
+  position: sticky;
+  left: 100px;
+}
 
 
 
