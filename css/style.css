@@ -33,7 +33,7 @@ nav img{
   padding-left: 7vw;
 }
 .nav-item{
-  padding-left: 8vw;
+  padding-left: 7vw;
 }
 .navbar-toggler{
   margin-right: 8vw;
@@ -282,8 +282,8 @@ nav img{
   display: inline-block;
 }
 .format_textbox marquee img{
-  height: 150px;
-  width: 150px;
+  height: 100px;
+  width: auto;
   display: inline-block;
 }
 
@@ -980,7 +980,7 @@ footer .medialinks a img{
 footer .terms{
   background-color: #454545;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 footer ul{
   position: relative;
